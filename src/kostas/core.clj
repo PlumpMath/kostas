@@ -11,7 +11,7 @@
   features, nominal ones will cause an error."}
   kostas.core)
 
-(defn with-distance 
+(defn- with-distance 
   [from {:keys [label features]}]
   (let [distance (comp #(* % %) -)
         squares (map distance from features)]
@@ -24,6 +24,6 @@
     (map (partial with-distance x))
     (sort-by :distance)
     (take k)
-    (first)
-    (:label)))
+    (group-by :label)
+    (apply max-key count)))
 
