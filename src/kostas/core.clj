@@ -1,15 +1,5 @@
 
-(ns ^{:doc "Kostas allows doing simple k nearest neighbour
-  analysis on supplied data sets.  The data sets should be
-  in the following format:
-           
-  [{:label \"Foo\" :features [1 1 0]}
-   {:label \"Bar\" :features [1 0 0]
-   ... ]
-           
-  Then pass this to classify. This only works with numerical
-  features, nominal ones will cause an error."}
-  kostas.core)
+(ns kostas.core)
 
 (defn- with-distance 
   [from {:keys [label features]}]

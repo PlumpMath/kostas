@@ -1,8 +1,8 @@
 
-kostas
+Kostas
 ======
 
-Kostas is a simple K Nearest Neighbour classifier for an arbitrary
+Kostas is a simple K-nearest Neighbour classifier for an arbitrary
 count of numerical features.
 
 Simple Usage
